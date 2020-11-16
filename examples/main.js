@@ -3,7 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import lasia_ui from "../packages"
+
 Vue.config.productionTip = false;
+
+Vue.use(lasia_ui)
 
 new Vue({
   router,
