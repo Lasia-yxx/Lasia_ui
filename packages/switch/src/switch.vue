@@ -66,6 +66,11 @@ export default {
       handler:function(e){
         this.lsChangeStyle(e)
       }
+    },
+    isActive:{
+      handler:function(e){
+        this.lsChangeStyle(e)
+      }
     }    
   }
 }
@@ -85,14 +90,14 @@ export default {
     font-size: 18px;
   }
   .ls-switch-normal{
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     font-size: 20px;
   }
   .ls-switch-large{
-    width: 200px;
-    height: 200px;
-    font-size: 28px;
+    width: 160px;
+    height: 160px;
+    font-size: 24px;
   }
   .ls-container{
     display: flex;

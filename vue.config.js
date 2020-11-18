@@ -1,4 +1,8 @@
+
+const path = require('path')
+
 module.exports = {
+
 
 
   pages: {
@@ -22,17 +26,15 @@ module.exports = {
   // 当设置为 `"error"` 时，检查出的错误会触发编译失败。
   lintOnSave: false,
 
-  chainWebpack: (config) => {
+  chainWebpack: config => {
     config.module
       .rule('js')
-      .include
-        .add("/packages/")
-        .end()
+      .include.add(path.resolve(__dirname, 'packages')).end()
       .use('babel')
-        .loader('babel-loader')
-        .tap(options => {
-          return options
-        })
+      .loader('babel-loader')
+      .tap(options => {
+        return options
+      })
   },
   configureWebpack: () => {},
 
