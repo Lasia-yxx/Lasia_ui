@@ -1,7 +1,7 @@
 // 导入button组件
 import LSbutton from './button'
 import LSswitch from './switch'
-import LSstatistics from "./numStatistics"
+import LSstatistics from "./num-statistics"
  
 // 组件列表
 const components = [
