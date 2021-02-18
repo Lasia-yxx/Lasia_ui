@@ -4,7 +4,7 @@
     <ls-switch v-model="isActive" size="normal"></ls-switch>
     <ls-switch v-model="isActive2" size="large"></ls-switch>
     <!-- <ls-text :data="data"></ls-text> -->
-    <ls-statistics></ls-statistics>
+    <div style="font-size:14px"><ls-statistics :nums="37492"></ls-statistics></div>
     <router-view />
   </div>
 </template>
